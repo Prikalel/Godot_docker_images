@@ -1,0 +1,5 @@
+# Ignore changes in downloaded files
+build/Godot_*
+build/templates
+# Ignore mounted volumes
+build/builds
