@@ -8,6 +8,7 @@ WORKDIR $GODOT_PATH
 
 COPY $GODOT_ENGINE_ZIP_FILE ./
 COPY check_checksum.sh ./
+COPY templates/* /root/.local/share/godot/export_templates/4.2.beta3.mono/
 
 # Download checksums to check that godot engine is correct; `libfontconfig` is used by Godot
 RUN apt-get update -y \
