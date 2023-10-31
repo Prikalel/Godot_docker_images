@@ -28,4 +28,4 @@ ENV PATH="${PATH}:${GODOT_PATH}"
 RUN ln -s $(find $GODOT_PATH -maxdepth 1 -perm -111 -type f | head -n 1 | grep -E '.') $GODOT_PATH/godot
 
 
-CMD ["/bin/sh"]
+CMD ["/bin/bash"]
